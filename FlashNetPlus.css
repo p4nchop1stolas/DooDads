@@ -1,3 +1,12 @@
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  min-height: 100vh; /* Makes the wrapper take up the full screen */
+  text-align: center;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 18px;
