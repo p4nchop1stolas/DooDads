@@ -48,7 +48,7 @@ const flashcards = [
   { front: 'Which command is used to display the IP configuration of a device?', back: 'Ipconfig for Windows or Ifconfig for Linux' },
   { front: 'What is the purpose of a loopback test in troubleshooting?', back: 'To verify the functionality of a network interface card (NIC)' },
   { front: 'What does ARP stand for?', back: 'Address Resolution Protocol' },
-  { front: 'Which protocol is used to resolve IP addresses to MAC addresses?', back: 'ARP' },
+  { front: 'Which protocol is used to resolve IP addresses to MAC addresses?', back: 'Address Resolution Protocol (ARP)' },
   { front: 'What is the purpose of the netstat command in troubleshooting?', back: 'To display active network connections and statistics' },
   { front: 'Which type of cable issue is most likely to cause intermittent connectivity problems?', back: 'A loose connector' },
   { front: 'What is the purpose of a packet sniffer in troubleshooting?', back: 'To capture and analyze network traffic' },
