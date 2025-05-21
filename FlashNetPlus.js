@@ -82,15 +82,29 @@ const flashcards = [
   { front: 'What would a Class B IP address look like?', back: '172.16.x.x'},
   { front: 'What would a Class A IP address look like?', back: '10.x.x.x'}, 
 ];
-let currentCardIndex = 0;
-const flashcardContainer = document.getElementById('flashcard-container');
-const front = document.querySelector('.front');
-const back = document.querySelector('.back');
-const prevBtn = document.getElementById('prev-btn');
+
+let remainingIndexes = [...Array(flashcards.length).keys()]; // Stores indexes instead of modifying original array
+let currentCardIndex = -1;
+
+const front = document.querySelector('.flashcard .front');
+const back = document.querySelector('.flashcard .back');
 const flipBtn = document.getElementById('flip-btn');
 const nextBtn = document.getElementById('next-btn');
 
+document.addEventListener("DOMContentLoaded", () => {
+    getRandomCard();
+    updateCard();
+    showFront();
+});
+
 function updateCard() {
+  if (remainingIndexes.length === 0) {
+    front.textContent = 'All questions have been answered!';
+    back.textContent = '';
+    nextBtn.disabled = true;
+    return;
+  }
+
   front.textContent = flashcards[currentCardIndex].front;
   back.textContent = flashcards[currentCardIndex].back;
 }
@@ -105,25 +119,24 @@ function showBack() {
   back.style.display = 'block';
 }
 
-prevBtn.addEventListener('click', () => {
-  currentCardIndex = (currentCardIndex - 1 + flashcards.length) % flashcards.length;
-  updateCard();
-  showFront();
-});
+function getRandomCard() {
+  if (remainingIndexes.length === 0) return;
+
+  let randomIndex = Math.floor(Math.random() * remainingIndexes.length);
+  currentCardIndex = remainingIndexes[randomIndex]; // Get the actual flashcard index
+  remainingIndexes.splice(randomIndex, 1); // Remove index so it's not picked again
+}
 
 nextBtn.addEventListener('click', () => {
-  currentCardIndex = (currentCardIndex + 1) % flashcards.length;
+  getRandomCard();
   updateCard();
   showFront();
 });
 
 flipBtn.addEventListener('click', () => {
-  if (back.style.display == 'block'){ //if showing front
+  if (back.style.display === 'block') { 
     showFront();
-  } else{
+  } else {
     showBack();
   }
 });
-
-updateCard();
-showFront();
