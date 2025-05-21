@@ -31,7 +31,7 @@ const flashcards = [
   { front: 'What tool is commonly used to capture and analyze network traffic?', back: 'Wireshark' },
   { front: 'Which command is used to test the reachability of a host on a network?', back: 'Ping' },
   { front: 'What does NTP stand for?', back: 'Network Time Protocol' },
-  { front: 'Which protocol is used to synchronize time across network devices?', back: 'NTP' },
+  { front: 'Which protocol is used to synchronize time across network devices?', back: 'Network Time Protocol (NTP)' },
   { front: 'What does SLA stand for?', back: 'Service Level Agreement' },
   { front: 'Which command is used to display active network connections on a device?', back: 'Netstat' },
   { front: 'What is the purpose of a patch management process in network operations?', back: 'To ensure that devices are updated with the latest security fixes.' },
