@@ -27,7 +27,7 @@ const flashcards = [
   { front: 'Which type of network topology uses a single cable to connect all devices?', back: 'Bus Topology' },
   { front: 'What is the primary advantage of using fiber optic cables in network implementations?', back: 'High-speed data transmission over long distances.' },
   { front: 'What does SNMP stand for?', back: 'Simple Network Management Protocol' },
-  { front: 'Which protocol is commonly used for network device management?', back: 'SNMP' },
+  { front: 'Which protocol is commonly used for network device management?', back: 'Simple Network Message Protocol (SNMP)' },
   { front: 'What tool is commonly used to capture and analyze network traffic?', back: 'Wireshark' },
   { front: 'Which command is used to test the reachability of a host on a network?', back: 'Ping' },
   { front: 'What does NTP stand for?', back: 'Network Time Protocol' },
