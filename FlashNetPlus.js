@@ -15,7 +15,7 @@ const flashcards = [
   { front: 'Which OSI layer is responsible for the physical addressing of devices?', back: 'Data Link Layer' },
   { front: 'Which layer of the OSI model is responsible for routing packets between networks?', back: 'Network Layer' },
   { front: 'What does ICMP stand for?', back: 'Internet Control Message Protocol' },
-  { front: 'Which protocol is used to test connectivity between two devices on a network?', back: 'ICMP' },
+  { front: 'Which protocol is used to test connectivity between two devices on a network?', back: 'Internet Control Message Protocol (ICMP)' },
   { front: 'A Hub operates at what layer of the OSI model?', back: 'Physical Layer' },
   { front: 'What is the difference between a Hub and a Switch?', back: 'A Hub broadcasts data to all devices, while a Switch sends data only to the intended recipient.' },
   { front: 'What is the primary advantage of using a mesh network topology?', back: 'High redundancy and fault tolerance.' },
