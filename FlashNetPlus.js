@@ -58,7 +58,7 @@ const flashcards = [
   { front: 'What does IPsec stand for?', back: 'Internet Protocol Security' },
   { front: 'Which IP version includes built-in security features like IPsec?', back: 'IPv6' },
   { front: 'What is the loopback address in IPv6?', back: '::1' },
-  { front: 'What is the purpose of NAT (Network Address Translation) in IPv4?', back: 'To extend the limited address space of IPv4' },
+  { front: 'What is the purpose of NAT (Network Address Translation) in IPv4?', back: 'Converts private IP addresses into a single public IP, conserving addresses, enhancing security, and enabling multiple devices to share internet access.' },
   { front: 'Which IPv6 address type is equivalent to a private IPv4 address?', back: 'Unique Local' },
   { front: 'What is the prefix length of a typical IPv6 link-local address?', back: '/64' },
   { front: 'What is the IPv6 equivalent of the IPv4 APIPA range (169.254.0.0/16)?', back: 'FE80::/10' },
