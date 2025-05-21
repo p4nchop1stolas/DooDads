@@ -70,6 +70,17 @@ const flashcards = [
   { front: 'Which wireless standard supports MIMO, 54Mbps, and both 2.4GHz and 5GHz frequencies?', back: '802.11n' },
   { front: 'Which wireless standard works mostly on 5GHz and supports speeds of 1Gbps?', back: '802.11ac' },
   { front: 'Which wireless standard is optimized for high efficiency, crowded networks, and supports speeds of up to 10Gbps?', back: '802.11ax' },
+  { front: 'What are the different classes of an IPv4 address?', back: 'Class A, Class B, Class C' },
+  { front: 'What IPv4 class is more likely to be used in a home?' , back: 'Class C' },
+  { front: 'What IPv4 class is more likely to be used in a medium sized network?', back: 'Class B'},
+  { front: 'What IPv4 class is more likely to be used in a large sized network?', back: 'Class A'},
+  { front: 'What is a subnet mask?', back: 'A subnet mask is a 32-bit number that separates an IP address into network and host portions. (255.255.255.0)'},  
+  { front: 'What subnet mask would a Class C IP address have?', back: '255.255.255.0'}, 
+  { front: 'What subnet mask would a Class B IP address have?', back: '255.255.0.0'},
+  { front: 'What subnet mask would a Class A IP address have?', back: '255.0.0.0'},  
+  { front: 'What would a Class C IP address look like?', back: '192.168.0.x'},
+  { front: 'What would a Class B IP address look like?', back: '172.16.x.x'},
+  { front: 'What would a Class A IP address look like?', back: '10.x.x.x'}, 
 ];
 let currentCardIndex = 0;
 const flashcardContainer = document.getElementById('flashcard-container');
