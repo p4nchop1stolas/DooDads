@@ -84,7 +84,7 @@ const flashcards = [
   { front: 'What encryption type uses the strongest encryption level possible using PSK, without using an authentication server?', back: 'WPA personal'}, 
   { front: 'What does WPA stand for?', back: 'WiFi Protected Access'},
   { front: 'On a switch, what feature does Port Security provide?', back: 'It provides security at the physical layer (Layer 1) by controlling access to switch ports based on MAC addresses.'},
-  { front: 'What does NAC (Network Access Control) do?', back: '(NAC) is a security approach that controls access to a network by enforcing policy compliance on devices before they're allowed to connect'}, 
+  { front: 'What does NAC (Network Access Control) do?', back: '(NAC) is a security approach that controls access to a network by enforcing policy compliance on devices before they are allowed to connect'}, 
   { front: 'What port is used for FTP?', back: '21'},
   { front: 'What does FTP stand for?', back: 'File Transfer Protocol'},
   { front: 'What port is used for SFTP?', back: '22'},
